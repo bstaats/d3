@@ -19,6 +19,9 @@
     "type": "git",
     "url": "http://github.com/mbostock/d3.git"
   },
+  "directories": {
+    "lib": "lib"
+  },
   "bpm:build": {
     "bpm_libs.js": {
       "files": [

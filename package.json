@@ -19,10 +19,20 @@
     "type": "git",
     "url": "http://github.com/mbostock/d3.git"
   },
-  "main": "d3.js",
+
+
+  "directories": {
+    "lib": "lib"
+  },
+  "bpm:build": {
+    "bpm_libs.js": {
+      "files": [
+        "lib"
+      ],
+      "minifier": "uglify-js"
+    }
+  },
   "dependencies": {
-    "uglify-js": "1.1.1",
-    "jsdom": "0.2.9",
-    "vows": "0.5.13"
+    "spade": ">= 0"
   }
 }

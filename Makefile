@@ -22,9 +22,10 @@ all: \
 # Run `make d3.custom.min.js` to produce the minified version.
 
 d3.custom.js: \
-	d3.js \
-	d3.geom.js \
-	d3.layout.js
+  d3.js \
+  d3.csv.js \
+  d3.time.js \
+  d3.layout.js
 
 .INTERMEDIATE d3.js: \
 	src/start.js \
@@ -264,4 +265,8 @@ package.json: d3.js src/package.js
 	node src/package.js > $@
 
 clean:
+	rm -f d3*.js
+
+lib: d3.custom.js
+	mv -f d3.custom.js lib/.
 	rm -f d3*.js

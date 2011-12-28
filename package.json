@@ -19,8 +19,16 @@
     "type": "git",
     "url": "http://github.com/mbostock/d3.git"
   },
+<<<<<<< HEAD
   "directories": {
     "lib": "lib"
+=======
+  "main": "d3.js",
+  "devDependencies": {
+    "uglify-js": "1.2.3",
+    "jsdom": "0.2.10",
+    "vows": "0.6.1"
+>>>>>>> Update dependency versions.
   },
   "bpm:build": {
     "bpm_libs.js": {
